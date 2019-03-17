@@ -9,14 +9,18 @@ $(document).ready(function () {
         console.log("up");
         $.get("/15/1");
         $.get("/16/1");
-        stop();
+        setTimeout(() => {
+            stop();
+        }, 100);
     });
     $("#down").click(function () {
         console.log("down");
         $.get("/3/1");
         $.get("/14/1");
         stop();
-
+        setTimeout(() => {
+            stop();
+        }, 100);
     });
     $("#left").click(function () {
         console.log("left");
