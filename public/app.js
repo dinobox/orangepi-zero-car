@@ -7,26 +7,26 @@ $(document).ready(function () {
     }
     $("#up").click(function () {
         console.log("up");
-        stop();
         $.get("/15/1");
         $.get("/16/1");
+        stop();
     });
     $("#down").click(function () {
         console.log("down");
-        stop();
         $.get("/3/1");
         $.get("/14/1");
+        stop();
 
     });
     $("#left").click(function () {
         console.log("left");
-        stop();
         $.get("/15/1");
+        stop();
     });
     $("#right").click(function () {
         console.log("right");
-        stop();
         $.get("/16/1");
+        stop();
         
     });
     $("#stop").click(function () {
