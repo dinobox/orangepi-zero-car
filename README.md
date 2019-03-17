@@ -111,3 +111,8 @@ PA16 = (1-1)*32+16 = 16
 PA14 = (1-1)*32+14 = 14
 ```
 
+
+
+
+su root -c "bash /root/monkey/start.sh"
+
