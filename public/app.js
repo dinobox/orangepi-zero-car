@@ -25,8 +25,9 @@ $(document).ready(function () {
     });
     $("#right").click(function () {
         console.log("right");
-        $.get("/16/1");
         stop();
+        $.get("/16/1");
+        
     });
     $("#stop").click(function () {
         console.log("stop");
