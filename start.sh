@@ -1,3 +1,4 @@
 cd /root/monkey
-pm2 app.js --name web
+node app.js&
+sleep 5
 motion
