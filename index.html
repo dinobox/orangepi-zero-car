@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>monkey</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <style>
+        body{
+            text-align: center;
+        }
+        img{
+            width: 100%;
+        }
+        table{
+            width: 240px;
+            margin: 10px auto;
+        }
+        .btn{
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            border: solid 2px #fff;
+        }
+
+    </style>
+    <script src="/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <img style="-webkit-user-select: none;" src="http://192.168.1.17:8081/">
+    <table>
+        <tr>
+            <td></td>
+            <td><button type="button" class="btn btn-primary" id="up">up</button></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><button type="button" class="btn btn-primary" id="left">left</button></td>
+            <td><button type="button" class="btn btn-danger" id="stop">stop</button></td>
+            <td><button type="button" class="btn btn-primary" id="right">right</button></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button type="button" class="btn btn-primary" id="down">down</button></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+<script src="app.js"></script>
+
+</html>

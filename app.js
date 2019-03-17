@@ -3,7 +3,12 @@ const app = express();
 const power = require('./power.js');
 var bodyParser = require('body-parser');
 var urlencodedParser = bodyParser.urlencoded({ extended: false })
-app.get('/', (req, res) => res.send('Hello World!'));
+
+app.use(express.static('public'));
+app.get('/', (req, res) => {
+    // res.send('Hello World!');
+    res.sendFile(`${__dirname}/index.html`);
+});
 
 app.get('/:pin/:value', (req, res) => {
     var pin = req.params.pin;

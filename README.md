@@ -10,6 +10,42 @@ orange pi zero 安装了dietpi。
 
 开启wifi热点。默认ip是192.168.42.1
 
+
+设置源为国内源
+
+```
+nano /etc/apt/sources.list
+```
+
+```
+deb http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ jessie main non-free contrib
+deb-src http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ jessie main non-free contrib
+```
+
+安装 motion (摄像头)
+
+```
+apt install motion
+```
+
+```
+sudo nano /etc/default/motion
+```
+
+```
+start_motion_daemon = yes
+```
+
+```
+sudo nano /etc/motion/motion.conf
+```
+
+
+```
+stream_localhost off
+```
+
+
 安装npm
 
 ```
@@ -41,7 +77,9 @@ npm install
 node app.js
 ```
 
-
+```
+npm install pm2 -g
+```
 
 ```
 nano /etc/rc.local
@@ -54,5 +92,22 @@ cd /root/monkey
 
 ```
 su root -c "bash /root/monkey/start.sh"
+```
+
+
+### 控制
+
+![](pin.png)
+
+> (P后面的字母在字母表(26)中的位置 - 1) * 32 + 后面的数字
+
+```    
+PA3 = (1-1)*32+3 = 3
+
+PA15 =(1-1)*32+15 = 15
+
+PA16 = (1-1)*32+16 = 16
+
+PA14 = (1-1)*32+14 = 14
 ```
 

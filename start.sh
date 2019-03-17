@@ -1,2 +1,3 @@
 cd /root/monkey
-./start.sh
+pm2 app.js --name web
+motion
